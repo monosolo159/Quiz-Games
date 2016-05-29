@@ -13,51 +13,68 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:gravity="center_horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_horizontal|center_vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#64ffffff"
-            android:gravity="center_vertical|center_horizontal">
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#64ffffff">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Question"
+                android:text="ยินดีต้อนรับเข้าสู่เกมส์ตอบคำถาม"
                 android:id="@+id/txtMainQuestion"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"
                 android:singleLine="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/question" />
+
         </LinearLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="btnAns 1"
-            android:id="@+id/btnAns1" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="btnAns 2"
-            android:id="@+id/btnAns2" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="btnAns 3"
-            android:id="@+id/btnAns3" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="btnAns 4"
-            android:id="@+id/btnAns4" />
-
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:id="@+id/btnNewGame"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_weight="1"
+            android:onClick="cilckRegisterMain" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:id="@+id/btnRank"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_weight="1"
+            android:onClick="clickRankMain" />
+    </LinearLayout>
+
 </RelativeLayout>
