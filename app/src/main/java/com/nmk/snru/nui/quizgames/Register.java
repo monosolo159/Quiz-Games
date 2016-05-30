@@ -9,7 +9,7 @@ import android.widget.EditText;
 public class Register extends AppCompatActivity {
 
     private EditText nameEditText;
-    private String strName;
+    public static String strName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

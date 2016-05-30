@@ -53,7 +53,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Game"
+            android:text="เริ่มเกมส์"
             android:id="@+id/btnNewGame"
             android:layout_alignParentBottom="false"
             android:layout_alignParentLeft="false"
@@ -66,7 +66,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rank"
+            android:text="ลำดับผู้เล่น"
             android:id="@+id/btnRank"
             android:layout_alignParentBottom="false"
             android:layout_alignParentLeft="false"
@@ -75,6 +75,19 @@
             android:layout_alignWithParentIfMissing="false"
             android:layout_weight="1"
             android:onClick="clickRankMain" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="จัดการคำถาม"
+            android:id="@+id/btnManage"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_weight="1"
+            android:onClick="clickManageMain" />
     </LinearLayout>
 
 </RelativeLayout>

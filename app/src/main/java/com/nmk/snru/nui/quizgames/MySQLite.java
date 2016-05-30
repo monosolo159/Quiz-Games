@@ -47,4 +47,8 @@ public class MySQLite {
         contentValues.put(columnR_score,intScore);
         return sqLiteDatabase.insert(rank_table,null,contentValues);
     }
+
+    public void addUpdateQuestion(int id,String strQuiz, String strA1, String strA2, String strA3, String strA4, String strATrue){
+        sqLiteDatabase.execSQL("UPDATE quizTable SET question="+strQuiz+", answer1="+strA1+", answer2="+strA2+", answer3="+strA3+", answer4="+strA4+", answerTrue="+strATrue+" WHERE _id="+id);
+    }
 }

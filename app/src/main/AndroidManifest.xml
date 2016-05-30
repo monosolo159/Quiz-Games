@@ -17,7 +17,10 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".Rank" />
-        <activity android:name=".Question"></activity>
+        <activity android:name=".Question" />
+        <activity android:name=".QuestionAdd" />
+        <activity android:name=".QuestionManager" />
+        <activity android:name=".QuestionUpdate"></activity>
     </application>
 
 </manifest>

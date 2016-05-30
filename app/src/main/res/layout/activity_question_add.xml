@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nmk.snru.nui.quizgames.QuestionAdd"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#64ffffff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="เพิ่มคำถาม"
+                android:id="@+id/textView"
+                android:background="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtQuestion"
+                android:hint="ระบุคำถาม"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtAns1"
+                android:gravity="center"
+                android:hint="ระบุคำตอบที่ 1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtAns2"
+                android:gravity="center"
+                android:hint="ระบุคำตอบที่ 2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtAns3"
+                android:gravity="center"
+                android:hint="ระบุคำตอบที่ 3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtAns4"
+                android:gravity="center"
+                android:hint="ระบุคำตอบที่ 4" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTxtAnsTrue"
+                android:gravity="center"
+                android:hint="ระบุเลขคำตอบที่ถูก เช่น 4"
+                android:numeric="integer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="กลับ"
+            android:id="@+id/btnBack"
+            android:layout_weight="1"
+            android:onClick="cilckQuestionBack" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เพิ่ม"
+            android:id="@+id/btnAdd"
+            android:layout_weight="1"
+            android:onClick="cilckQuestionAdd" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ล้าง"
+            android:id="@+id/btnReset"
+            android:layout_weight="1"
+            android:onClick="cilckQuestionReset" />
+
+    </LinearLayout>
+</RelativeLayout>

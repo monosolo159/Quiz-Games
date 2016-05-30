@@ -25,4 +25,8 @@ public class MainActivity extends AppCompatActivity {
     public void  clickRankMain(View view){
         startActivity(new Intent(MainActivity.this,Rank.class));
     }
+
+    public void  clickManageMain(View view){
+        startActivity(new Intent(MainActivity.this,QuestionManager.class));
+    }
 }

@@ -33,7 +33,7 @@
                 android:background="#ffffff"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:layout_margin="4dp" />
+                android:layout_margin="5sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,7 +54,7 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:gravity="center"
-                android:layout_margin="4dp" />
+                android:layout_margin="5sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:gravity="center"
-                android:layout_margin="4dp" />
+                android:layout_margin="5sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,13 +80,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="คำถาม"
+                android:text="คำถาม 0 0 0"
                 android:id="@+id/txtQuestion"
                 android:background="#64ffffff"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:gravity="center"
-                android:layout_margin="4dp" />
+                android:layout_margin="5sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,25 +98,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="New Button"
-                android:id="@+id/button" />
+                android:id="@+id/btnA1"
+                android:onClick="checkQuestion" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="New Button"
-                android:id="@+id/button2" />
+                android:id="@+id/btnA2"
+                android:onClick="checkQuestion" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="New Button"
-                android:id="@+id/button3" />
+                android:id="@+id/btnA3"
+                android:onClick="checkQuestion" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="New Button"
-                android:id="@+id/button4" />
+                android:id="@+id/btnA4"
+                android:onClick="checkQuestion" />
         </LinearLayout>
 
     </LinearLayout>
